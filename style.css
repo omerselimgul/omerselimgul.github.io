@@ -7,6 +7,7 @@ body {
   margin: 0px;
   background-color: #3a3b46;
 }
+
 /* #region Navbar */
 .navbar {
   color: white;
@@ -209,6 +210,29 @@ body {
 }
 /* #endregion Card4 */
 
+/* #region Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a3b46;
+}
+.footer-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.footer-content {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* #endregion */
+
 /* #region Custom Class */
 
 .font-light {
@@ -231,7 +255,32 @@ body {
 /*#endregion Custom Tag */
 
 /* Custom Animation */
+.nav-link {
+  display: inline-block;
+  position: relative;
+  padding: 20px 0px;
+  margin: 0px 20px;
+}
+.nav-link:hover {
+  opacity: 1;
+}
 
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
 .social-media > a > img {
   -webkit-transition: -webkit-transform 0.2s ease-out;
   -moz-transition: -moz-transform 0.2s ease-out;
