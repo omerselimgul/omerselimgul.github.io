@@ -46,20 +46,18 @@ body {
 
 /* #region Card */
 .card {
-  background-color: #272935;
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 17%;
   padding-right: 17%;
   box-sizing: border-box;
 }
-.card2 {
+
+.card:nth-child(even) {
   background-color: #23252f;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 17%;
-  padding-right: 17%;
-  box-sizing: border-box;
+}
+.card:nth-child(odd) {
+  background-color: #272935;
 }
 /* #endregion Card */
 
