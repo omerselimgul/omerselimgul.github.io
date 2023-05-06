@@ -330,15 +330,6 @@ body {
 }
 /* #endregion mobile */
 @media screen  and (max-width: 600px) { 
-  .rs{
-    width: 40%;
-  }
-  .right-side-contents {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-  }
 
   .card-content2 {
     display: flex;
