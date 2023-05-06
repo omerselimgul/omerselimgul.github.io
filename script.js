@@ -1,11 +1,10 @@
 const darkColorButton=document.getElementById("ligth-color")
-
 const toggleInput=document.getElementById("switch")
-
 const responsiveNavBar=document.getElementById("responsiveNavBar")
 const responsiveNavbarContent=document.getElementById("responsive-navbar-content-child")
 const linkedin=document.getElementById("linkedin");
 const github=document.getElementById("github");
+
 responsiveNavBar.addEventListener("click",(e)=>{
     if(responsiveNavbarContent.classList.contains("display-none")){
         responsiveNavbarContent.classList.remove("display-none");
@@ -14,6 +13,7 @@ responsiveNavBar.addEventListener("click",(e)=>{
     }
     
 })
+
 toggleInput?.addEventListener("click",(e)=>{
     if(e.target.checked===true){
         document.documentElement.style.setProperty('--color1', '#99A98F');
