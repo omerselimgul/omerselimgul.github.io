@@ -2,9 +2,17 @@ const darkColorButton=document.getElementById("ligth-color")
 
 const toggleInput=document.getElementById("switch")
 
+const responsiveNavBar=document.getElementById("responsiveNavBar")
+const responsiveNavbarContent=document.getElementById("responsive-navbar-content-child")
 
-
-
+responsiveNavBar.addEventListener("click",(e)=>{
+    if(responsiveNavbarContent.classList.contains("display-none")){
+        responsiveNavbarContent.classList.remove("display-none");
+    }else{
+        responsiveNavbarContent.classList.add("display-none");
+    }
+    
+})
 toggleInput?.addEventListener("click",(e)=>{
     if(e.target.checked===true){
         document.documentElement.style.setProperty('--color1', '#bae8e8');

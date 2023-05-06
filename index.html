@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -26,6 +28,10 @@
           <a class="nav-link nav-link-ltr" href="#experience">Experience</a>
         </div>
       </div>
+      <a class="icon" id="responsiveNavBar">
+        <i class="fa fa-bars"></i>
+      </a>
+
       <div class="navbar-icons-items">
         <a>
           <img id="dark-color" src="./public/moon.png" />
@@ -39,10 +45,18 @@
         </a>
       </div>
     </div>
+    <div >
+      <div class="responsive-navbar-content-child" id="responsive-navbar-content-child">
+        <a class="nav-link nav-link-ltr" href="#biography">Biography</a>
+        <a class="nav-link nav-link-ltr" href="#interests">Interests</a>
+        <a class="nav-link nav-link-ltr" href="#about">About</a>
+        <a class="nav-link nav-link-ltr" href="#experience">Experience</a>
+      </div>
+    </div>
     <div class="main-layout" id="main-layout">
-      <div class="bodycard" id="biography">
+      <div class="bodycard"  id="biography">
         <div class="card-content1">
-          <div class="left-side">
+          <div class="left-side" data-aos="fade-right">
             <div class="left-side-content">
               <img id="pp" src="./public/pp.jpeg" width="250px" height="250px" />
               <p class="font-light font-large" style="margin-bottom: 0px">
@@ -61,13 +75,17 @@
               </div>
             </div>
           </div>
-          <div class="right-side">
+          <div class="right-side" data-aos="fade-left">
             <p class="right-side-header">Biography</p>
             <h3 style="font-weight: lighter">
               Ömer Selim Gül is a 3rd year computer engineering student at
               Marmara University. also full stack web developer
             </h3>
+
+            <div class="rs" >
+
             <div class="right-side-contents">
+
               <div class="interest">
                 <p class="font-bold font-large">Interests</p>
                 <ul>
@@ -85,12 +103,13 @@
                 </ul>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="bodycard" id="interests">
         <div class="card-content2">
-          <div>
+          <div data-aos="fade-right">
             <h1>For backend l could work with</h1>
             <div class="card-content2-items">
               <strong>C# .net</strong>
@@ -98,7 +117,7 @@
               <strong>Node Js</strong>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <h1>For Frontend l could work with</h1>
             <div class="card-content2-items">
               <strong>ReactJs</strong>
@@ -109,7 +128,7 @@
         </div>
       </div>
       <div class="bodycard" id="about">
-        <div class="card-content3">
+        <div class="card-content3" data-aos="zoom-in">
           <h1>About</h1>
           <p class="experience-content">
             Backend ve Frontend tarafında geliştirme yapıyorum . Backend
@@ -126,7 +145,7 @@
           </p>
         </div>
       </div>
-      <div class="bodycard" id="experience">
+      <div class="bodycard" data-aos="fade-right" id="experience">
         <div class="card4-content">
           <div class="card4-left-side">
             <p class="font-bold font-large">Experience</p>
@@ -138,7 +157,7 @@
             <div class="card4-middle-line"></div>
           </div>
           <div class="card4-right-side">
-            <div class="exp-card">
+            <div class="exp-card" data-aos="zoom-in">
               <h3>Intern</h3>
               <a href="https://fimple.co.uk/">
                 <h4>Fimple</h4>
@@ -153,7 +172,7 @@
                 esse facere. Eos, fuga. Neque cum in nihil eligendi a.
               </p>
             </div>
-            <div class="exp-card">
+            <div class="exp-card" data-aos="zoom-in">
               <h3>Frontent Developer</h3>
               <a href="https://fimple.co.uk/">
                 <h4>Fimple</h4>
@@ -172,7 +191,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-container">
+    <div class="footer-container" >
       <footer class="footer">
         <h1>Contact with me</h1>
         <div class="footer-content-container">
@@ -189,7 +208,13 @@
     </div>
   </div>
 
-  <script src="./script.js"></script>
+  <script src="./script.js">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
