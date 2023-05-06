@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="Container">
+  <div class="Container" id="start">
     <div class="navbar">
       <div class="navbar-content">
         <a href="#main-layout" style="color: var(--font-color);; text-decoration: none">
@@ -54,9 +54,14 @@
       </div>
     </div>
     <div class="main-layout" id="main-layout">
+        <a href="#start" id="upper-button">
+
+        <img src="./public/upper.png" alt="">
+      </a>
+
       <div class="bodycard"  id="biography">
         <div class="card-content1">
-          <div class="left-side" data-aos="fade-right">
+          <div class="left-side" data-aos="zoom-in">
             <div class="left-side-content">
               <img id="pp" src="./public/pp.jpeg" width="250px" height="250px" />
               <p class="font-light font-large" style="margin-bottom: 0px">
@@ -75,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="right-side" data-aos="fade-left">
+          <div class="right-side" data-aos="zoom-in">
             <p class="right-side-header">Biography</p>
             <h3 style="font-weight: lighter">
               Ömer Selim Gül is a 3rd year computer engineering student at
@@ -109,7 +114,7 @@
       </div>
       <div class="bodycard" id="interests">
         <div class="card-content2">
-          <div data-aos="fade-right">
+          <div data-aos="zoom-in">
             <h1>For backend l could work with</h1>
             <div class="card-content2-items">
               <strong>C# .net</strong>
@@ -117,7 +122,7 @@
               <strong>Node Js</strong>
             </div>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="zoom-in">
             <h1>For Frontend l could work with</h1>
             <div class="card-content2-items">
               <strong>ReactJs</strong>
@@ -145,8 +150,8 @@
           </p>
         </div>
       </div>
-      <div class="bodycard" data-aos="fade-right" id="experience">
-        <div class="card4-content">
+      <div class="bodycard" id="experience">
+        <div class="card4-content"  data-aos="zoom-in" >
           <div class="card4-left-side">
             <p class="font-bold font-large">Experience</p>
           </div>
@@ -190,8 +195,9 @@
           </div>
         </div>
       </div>
+
     </div>
-    <div class="footer-container" >
+    <div class="footer-container"  >
       <footer class="footer">
         <h1>Contact with me</h1>
         <div class="footer-content-container">

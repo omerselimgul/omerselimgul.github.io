@@ -9,8 +9,6 @@
 html {
   scroll-behavior: smooth;
   background-color: var(--bg-color);
-  width: auto;
-  margin: 0px;
 
 }
 body {
@@ -23,7 +21,9 @@ body {
 /* #region pc */
 @media screen and (min-width: 1024px)
  {
-
+  #upper-button{
+    display: none;
+  }
   .font-large {
     font-size: large;
   }
@@ -177,6 +177,20 @@ body {
 
 /* #region mobile */
 @media screen  and (max-width: 1024px) { 
+  #upper-button{
+    z-index: 2;
+    background-color:
+    inherit;
+    display: inline;  
+    position: fixed; 
+    right: 15px;
+    bottom: 15px;
+    opacity: 20%;
+  }
+  #upper-button:hover{
+    opacity: 80%;
+
+  }
   .font-large {
     font-size: large;
   }
